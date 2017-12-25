@@ -3302,7 +3302,7 @@
 		}
 
 			.posts article:before {
-				background: rgba(210, 215, 217, 0.75);
+				/*background: rgba(210, 215, 217, 0.75);*/
 				content: '';
 				display: block;
 				height: calc(100% + 6em);
@@ -3313,7 +3313,7 @@
 			}
 
 			.posts article:after {
-				background: rgba(210, 215, 217, 0.75);
+				/*background: rgba(210, 215, 217, 0.75);*/
 				bottom: -3em;
 				content: '';
 				display: block;
@@ -3328,13 +3328,16 @@
 			}
 
 			.posts article .image {
-				display: block;
+				display: flex;
 				margin: 0 0 2em 0;
+				justify-content: center;
 			}
 
 				.posts article .image img {
 					display: block;
-					width: 100%;
+					width: auto;
+					max-width: 300px;
+					max-height: 150px;
 				}
 
 		@media screen and (min-width: 1681px) {
@@ -3364,7 +3367,7 @@
 		@media screen and (max-width: 1680px) {
 
 			.posts article {
-				width: calc(50% - 6em);
+				width: calc(33.33333% - 6em);
 			}
 
 				.posts article:nth-last-child(3) {

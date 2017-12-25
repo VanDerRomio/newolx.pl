@@ -12,5 +12,20 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
+
+
+//404 page
+Route::get('/404', function () {
+    return view('404');
+})->name('404');
+
+//500 page
+Route::get('/500', function () {
+    return view('500');
+})->name('500');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
